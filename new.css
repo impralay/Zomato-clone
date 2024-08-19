@@ -1,0 +1,290 @@
+.zomato-main {
+  position: relative;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 3fr 4fr;
+  width: 100%;
+  background-color: rgb(255, 251, 247);
+  padding: 80px 20%;
+}
+
+.mobile img {
+  position: relative;
+  width: 250px;
+  height: auto;
+}
+
+.app-info {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.app-info .get-the-app {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.app-info .get-the-app .main-title {
+  font-size: 2.5rem;
+  font-weight: 450;
+  color: rgb(28, 28, 28);
+}
+
+.app-info .get-the-app .sub5 {
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(54, 54, 54);
+}
+
+.selection {
+  position: relative;
+  display: flex;
+  padding: 20px 0;
+  gap: 80px;
+}
+/* Customize the label (the container) */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: relative;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  margin-right: 10px;
+  outline: #ef4f5f solid 1px;
+  border-radius: 50%;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ef4f5f;
+}
+
+.container p {
+  font-size: 18px;
+  color: rgba(28, 28, 26, 0.659);
+}
+
+.email-add {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
+
+.email-add input {
+  width: 300px;
+  height: 48px;
+  border-radius: 8px;
+  padding: 0 15px;
+  font-size: 16px;
+  border: 1px solid rgba(203, 195, 195, 0.969);
+  outline: none !important;
+}
+
+.email-add button {
+  width: 140px;
+  border-radius: 8px;
+  border: none !important;
+  background: border-box rgb(240, 69, 86);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none !important;
+}
+
+.down-app {
+  padding: 15px 0;
+  color: #00000076 !important;
+}
+
+.email-add button:hover {
+  background: border-box rgba(225, 58, 72, 0.918);
+}
+.app-store {
+  position: relative;
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.app-store img {
+  position: relative;
+  width: 140px;
+}
+/* ----------------Explore options near me-------------- */
+.explore {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: rgb(252, 252, 252);
+  gap: 20px;
+  width: 100%;
+  height: auto;
+  padding: 20px 15%;
+}
+.explore .me {
+  color: #171616db;
+  font-size: 2rem;
+}
+
+.popular {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: rgb(255, 255, 255);
+  font-size: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: rgb(28, 28, 28);
+  border: 1px solid rgb(232, 232, 232);
+  cursor: pointer;
+}
+
+/* ------------------footer---------------- */
+footer {
+  position: relative;
+  margin-top: 30px;
+  padding: 50px 15%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  background: rgb(248, 248, 248);
+}
+
+footer .top {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+footer .top .logo-2 {
+  position: relative;
+  width: 140px;
+  height: auto;
+}
+footer .top .logo-2 img {
+  position: relative;
+  width: 100%;
+}
+footer .top .country {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+footer .top .country .select-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 7px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #0000006e;
+}
+footer .top .country .select-box .f-icon {
+  position: relative;
+  width: 22px;
+  height: auto;
+  font-size: 20px;
+}
+
+footer .top .country .select-box .f-icon img {
+  position: relative;
+  width: 100%;
+}
+
+footer .footer-body {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  width: 95%;
+}
+
+.footer-body ul {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-body ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.footer-body ul li a {
+  text-decoration: none;
+  color: #616161;
+}
+.footer-body ul li a b,
+.footer-body .social-links b {
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+}
+.social-links .social-title {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.all-links i {
+  font-size: 25px;
+}
+
+.social-links img {
+  width: 150px;
+  height: auto;
+  padding-top: 12px;
+}
+
+.last p {
+    font-size: 13px;
+    opacity: 0.5;
+}
